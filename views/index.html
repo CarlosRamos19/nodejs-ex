@@ -247,7 +247,7 @@ pre {
 						 //    create a producer and connect to a Zookeeper to send the payloads.
 						 var kafka = require('kafka-node'),
 							 Producer = kafka.Producer,
-							 client = new kafka.Client('kafka:2181'),
+							 client = new kafka.Client('192.168.1.93:2181'),
 							 producer = new Producer(client);
 							 /*
 								 Creating a payload, which takes below information
